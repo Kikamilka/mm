@@ -404,7 +404,7 @@ html {
   color: #000000;
   font-size: 16px;
   line-height: 26px;
-  text-align: left;
+  text-align: center;
 }
 .content-2 .thumbnail p + p {
   margin-top: -10px;
