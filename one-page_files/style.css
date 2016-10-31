@@ -1248,8 +1248,8 @@ html {
   padding: 41px 0;
 }
 .mbr-section__container--isolated {
-  padding-bottom: 93px;
-  padding-top: 93px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 .mbr-section__container--first {
   padding-top: 93px;
