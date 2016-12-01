@@ -356,6 +356,11 @@ html {
   padding-right: 0;
   text-align: center;
 }
+.section-about.content-2 .thumbnail {
+  background: #ededed;
+  opacity: 0.8;
+  border-radius: 40px;
+}
 @media (max-width: 767px) {
   .content-2 .thumbnail {
     padding-top: 52px;
@@ -988,7 +993,7 @@ html {
 }
 .mbr-navbar--stuck .mbr-navbar__section,
 .mbr-navbar--relative .mbr-navbar__section {
-  background: #2c2c2c;
+  background-image: url(../images/bgr_wood.jpg) !important;
 }
 @media (max-width: 991px) {
   .mbr-navbar--auto-collapse .mbr-navbar__container {
@@ -1216,7 +1221,7 @@ html {
   overflow: hidden;
 }
 .mbr-section--full-height {
-  height: 20vh;
+  height: 6vw;
 }
 .mbr-section--full-height.mbr-after-navbar:before {
   display: none;
@@ -1248,8 +1253,8 @@ html {
   padding: 41px 0;
 }
 .mbr-section__container--isolated {
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding-bottom: 1px;
+  padding-top: 1px;
 }
 .mbr-section__container--first {
   padding-top: 93px;
@@ -2050,4 +2055,7 @@ html {
 }
 a.text-white {
     color: white;
+}
+.modal-backdrop {
+    z-index: -1;
 }
