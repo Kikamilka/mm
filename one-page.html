@@ -126,10 +126,10 @@
         var map;
         DG.then(function () {
             map = DG.map('map', {
-                center: [56.838920505339,35.921760410145],
+                center: [56.838920505339, 35.921760410145],
                 zoom: 16
             });
-            DG.marker([56.838920505339,35.921760410145]).addTo(map);
+            DG.marker([56.838920505339, 35.921760410145]).addTo(map);
         });
     </script>
 </head>
@@ -143,35 +143,39 @@
         class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse"
         id="menu-74">
     <div class="mbr-navbar__section mbr-section">
-        <div class="mbr-section__container container">
+        <div class="mbr-section__container container" style="width: 90%;">
             <div class="mbr-navbar__container">
-                <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
+                <div class="mbr-navbar__column mbr-navbar__column--xl mbr-navbar__brand">
                     <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
                         <span class="mbr-brand__logo"><a href="https://mmassage.ru"><img
                                 class="mbr-navbar__brand-img mbr-brand__img"
                                 src="./images/м.jpg" alt=""></a></span>
-                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white"
-                                                         href="https://mmassage.ru">ОФИС "Медицинский массаж"</a></span>
+                        <span class="mbr-brand__name"><a class="mbr-brand__name"
+                                                         href="https://mmassage.ru" style="color: #333333; font-size:
+                                                          2.4em; font-family: 'Trebuchet MS', 'Lucida Grande', Tahoma,
+                                                           sans-serif;">ОФИС
+                            "Медицинский
+                            массаж"</a></span>
                     </span>
                 </div>
-                <div class="mbr-navbar__hamburger mbr-hamburger text-white mbr-added">
+                <div class="mbr-navbar__hamburger mbr-hamburger mbr-added">
                     <span
-                        class="mbr-hamburger__line">
+                            class="mbr-hamburger__line">
                     </span>
                 </div>
                 <div class="mbr-navbar__column mbr-navbar__menu">
                     <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
                         <div class="mbr-navbar__column">
                             <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white"
-                                                                href="#">ИНФО</a></li>
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white"
+                                <!--li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
+                                                                href="#">ИНФО</a></li-->
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
                                                                 href="#">ПРАЙС</a>
                                 </li>
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white"
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
                                                                 href="#">АКЦИИ</a></li>
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white"
-                                                                href="#">КОНТАКТЫ</a>
+                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
+                                                                href="#contacts">КОНТАКТЫ</a>
                                 </li>
                             </ul>
                         </div>
@@ -440,36 +444,59 @@
     </div>
 </section>
 
-<section class="content-2 col-4" id="" style="background-image: url(images/Background-5.png);">
+<section class="content-2 mbr-section mbr-section--no-padding" id="" style="background-image:
+url(images/Background-5.png);">
     <!--div class="mbr-overlay" style="opacity: 0.6; background-color: #ffffff;"></div-->
-    <div class="mbr-box__container mbr-section__container container">
-        <div class="row">
-            <div>
-                <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="./images/person.jpg"></div>
+    <div class="mbr-box__container mbr-section__container container personal">
+        <div class="row no-gutter">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 main">
+                <div class="thumbnail main">
+                    <div class="image"><img class="undefined" src="./images/zaev.jpg"></div>
                     <div class="caption">
                         <div style="text-align: center;">
                             <h3>Заев Андрей Иванович</h3>
-                            <p>Ведущий специалист офиса. Невролог, консультант восстановительной медицины и физической тренировки, специалист по массажу. </p>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-triangle-right"
+                                          style="margin-right: 5px;"></span>Ведущий
+                                    специалист
+                                    офиса.
+                                </li>
+                                <li><span class="glyphicon glyphicon-triangle-right" style="margin-right: 5px;"></span>Невролог,
+                                    консультант
+                                    восстановительной медицины и физической тренировки,
+                                    специалист по массажу.
+                                </li>
+                                <li><span class="glyphicon glyphicon-triangle-right" style="margin-right: 5px;"></span>Тверская
+                                    государственная
+                                    медицинская академия
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="./one-page_files/facebook-350x350-71.png"></div>
+                    <div class="image"><img class="undefined" src="./images/romanova.jpg"></div>
                     <div class="caption">
                         <div>
-                            <h3>SOCIAL BUTTONS</h3>
-                            <p>Duis sodales arcu eget gravida mollis. Sed condimentum nibh at dapibus semper. Etiam
-                                mattis leo at commodo eleifend. Integer mauris est, luctus vitae lobortis sed, tristique
-                                in eros.&nbsp;</p>
+                            <h3>Романова Алена</h3>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-triangle-right" style="margin-right: 5px;"></span>Штатный
+                                    специалист офиса
+                                </li>
+                                <li><span class="glyphicon glyphicon-triangle-right" style="margin-right: 5px;"></span>Тверской
+                                    медицинский колледж
+                                </li>
+                                <li><span class="glyphicon glyphicon-triangle-right" style="margin-right: 5px;"></span>Медицинская
+                                    сестра
+                                </li>
+                            </ul>
                         </div>
-                        <p class="group"><a href="#" class="btn btn-info">LEARN MORE</a></p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
                     <div class="image"><img class="undefined" src="./one-page_files/bytafont-350x350-38.png"></div>
                     <div class="caption">
@@ -483,7 +510,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
                     <div class="image"><img class="undefined" src="./one-page_files/youtube-350x350-69.png"></div>
                     <div class="caption">
@@ -501,63 +528,51 @@
     </div>
 </section>
 
-<!-- Секция "О нас" (текст + картинки - всё менять!) -->
-<section class="content-2 col-4 section-about" id="features1-75" style="background-image: url(images/sport.jpg);
-background-repeat: round;">
-    <div class="mbr-overlay" style="opacity: 0.4; background-color: #afd9ee;"></div>
-    <div class="mbr-box__container mbr-section__container container">
-        <div class="row">
+<!-- Секция "Преимущества"-->
+<section class="content-2 col-5 section-about" id="features1-75" style="background-image: url(images/bgr_wood.jpg);
+background-repeat: round; padding: 40px 20px 40px !important;">
+    <div class="mbr-overlay" style="opacity: 0.4; background-color: #ffffff;"></div>
+    <div class="mbr-box__container mbr-section__container container" style="width: 90% !important;">
+        <div class="row" style="text-align: center; font-family: 'Comic Sans MS', cursive, sans-serif;">
             <div>
-                <div class="thumbnail">
-                    <div class="image">
-                        <img class="undefined" src="./one-page_files/google-slides-350x350-16.png">
-                    </div>
-                    <div class="caption">
-                        <div>
-                            <h3>Решение проблемы боли у взрослых и детей</h3>
-                            <p>Структурные изменения позвоночника (дорсопатия) могут приводить к его неточной и неправильной работе, что приводит к его перегрузке и изменению мягких тканей: капсул суставов, связок, сухожилий, мышц. Одно из проявлений: болевой синдром. В зависимости от отдела эти синдромы носят названия: дорсалгия, люмбалгия, цервикалгия. ...</p>
-                        </div>
-                        <p class="group">
-                            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#myModal">
-                                Узнать больше
-                            </a>
-                        </p>
+                <div class="image">
+                    <img class="undefined" src="./images/individ.jpg" style="border-radius: 100px; opacity: 0.75;">
+                </div>
+                <div class="caption">
+                    <div>
+                        <h3>Индивидуальный подход</h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="./one-page_files/reminders-350x350-18.png"></div>
-                    <div class="caption">
-                        <div>
-                            <h3>Массаж и гимнастика в первый год жизни</h3>
-                            <p> Оздоровительный массаж и гимнастика детям первого года жизни важное условие физического, психического и социального развития ребёнка, с различным уровнем здоровья. ... </p>
-                        </div>
-                        <p class="group"><a href="#" class="btn btn-default">Узнать больше</a></p>
+                <div class="image"><img class="undefined" src="./images/clock.jpg" style="border-radius: 100px; opacity: 0.75;"></div>
+                <div class="caption">
+                    <div>
+                        <h3>Удобное для Вас время</h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="./one-page_files/photos-350x350-95.png"></div>
-                    <div class="caption">
-                        <div>
-                            <h3>Массаж детям дошкольного и школьного возраста</h3>
-                            <p> Самостоятельное и комплексное лечение заболеваний: детский церебральный паралич, плоскостопие, сколиоз, бронхиальная астма, невроз. Самостоятельное и комплексное лечение заболеваний переходного возраста: головная боль и боль в спине, дискинезия желчевыводящих путей, обструктивный бронхит, вегето-сосудистая дисфункция. </p>
-                        </div>
-                        <p class="group"><a href="https://mobirise.com/" class="btn btn-default">Узнать больше</a></p>
+                <div class="image"><img class="undefined" src="./images/med.jpg" style="border-radius: 100px; opacity: 0.75;"></div>
+                <div class="caption">
+                    <div>
+                        <h3>Квалифицированный медицинский персонал</h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="./one-page_files/kindle-350x350-47.png"></div>
-                    <div class="caption">
-                        <div>
-                            <h3>Косметический массаж</h3>
-                            <p>Мы предлагаем безболезненную методику рефлекторного массажа, которая позволяет достигнуть как внешних эстетических улучшений, так и повысит уровень вашего здоровья в целом. </p>
-                        </div>
-                        <p class="group"><a href="#" class="btn btn-default">Узнать больше</a></p>
+                <div class="image"><img class="undefined" src="./images/spec.jpg" style="border-radius: 100px; opacity: 0.75;"></div>
+                <div class="caption">
+                    <div>
+                        <h3>Специальные предложения</h3>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="image"><img class="undefined" src="./images/dom.jpg" style="border-radius: 100px; opacity: 0.75;"></div>
+                <div class="caption">
+                    <div>
+                        <h3>Возможность выезда на дом или в Ваш офис</h3>
                     </div>
                 </div>
             </div>
@@ -566,33 +581,31 @@ background-repeat: round;">
 </section>
 
 <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="contacts2-90"
-         style="background-color: rgb(60, 60, 60);">
+         style="background-image: url(./images/Background-5.png);">
 
     <div class="mbr-section__container container">
         <div class="mbr-contacts mbr-contacts--wysiwyg row">
-            <div class="col-sm-6">
-                <div id="map" style="width:500px; height:300px">
+            <div class="col-sm-6" style="background-image: url(./images/bgr_wood.jpg); border-radius: 40px;">
+                <div id="map" style="margin: 15px 0; width: 570px; height:300px; border-radius: 20px;">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="row">
                     <div class="col-sm-5 col-sm-offset-1">
-                        <p class="mbr-contacts__text"><strong>ADDRESS</strong><br>
-                            1234 Street Name<br>
-                            City, AA 99999<br><br>
-                            <strong>CONTACTS</strong><br>
-                            Email: support@mobirise.com<br>
-                            Phone: +1 (0) 000 0000 001<br>
-                            Fax: +1 (0) 000 0000 002</p>
+                        <a name="contacts"></a>
+                        <p class="mbr-contacts__text"><strong>Адрес:</strong><br>
+                            г. Тверь,<br>
+                            ул. 15 лет Октября, 52к1<br><br>
+                            <strong>Контакты:</strong><br>
+                            тел. 71-02-19 <br>
+                             +7-920-174-9121 <br>
+                            mmassage69@yandex.ru
+                        </p>
                     </div>
-                    <div class="col-sm-6"><p class="mbr-contacts__text"><strong>LINKS</strong></p>
+                    <div class="col-sm-6"><p class="mbr-contacts__text"><strong>Наши страницы в соц.сетях:</strong></p>
                         <ul class="mbr-contacts__list">
-                            <li><a href="https://mobirise.com/" class="text-gray">Bootstrap one page template</a><a
-                                    class="mbr-contacts__link text-gray" href="https://mobirise.com/"></a></li>
-                            <li><a href="https://mobirise.com/" class="text-gray">Bootstrap basic template</a><a
-                                    class="mbr-contacts__link text-gray" href="https://mobirise.com/"></a></li>
-                            <li><a href="https://mobirise.com/" class="text-gray">Bootstrap gallery template</a></li>
-                            <li><a href="https://mobirise.com/" class="text-gray">Bootstrap responsive template</a></li>
+                            <li><a href="https://vk.com/mmassage_tver" class="text-gray">Мы в Вконтакте</a></li>
+                            <li><a href="#" class="text-gray">Мы в Facebook</a></li>
                             <li><br></li>
                         </ul>
                     </div>
@@ -603,15 +616,12 @@ background-repeat: round;">
 </section>
 
 <footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-91"
-        style="background-color: rgb(68, 68, 68);">
+        style="background-image: url(./images/bgr_wood.jpg)">
 
     <div class="mbr-section__container container">
         <div class="mbr-footer mbr-footer--wysiwyg row">
             <div class="col-sm-12">
-                <p class="mbr-footer__copyright"></p>
-                <p>Copyright (c) 2015 Company Name. <a href="https://mobirise.com/license.txt"
-                                                       class="text-gray">License</a></p>
-                <p></p>
+                <p>Copyright (c) 2016 Медицинский массаж. <a href="./licence_page.html">License</a></p>
             </div>
         </div>
     </div>
