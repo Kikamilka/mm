@@ -538,7 +538,7 @@ html {
 .pricing-table-1 {
   -webkit-box-shadow: inset 0 1px 0 rgba(10, 10, 10, 0.06);
   box-shadow: inset 0 1px 0 rgba(10, 10, 10, 0.06);
-  background: #f0f0f0;
+  /*background: #f0f0f0;*/
   overflow: hidden;
   padding: 63px 0 30px;
   position: relative;
@@ -998,7 +998,9 @@ html {
 }
 .mbr-navbar--stuck .mbr-navbar__section,
 .mbr-navbar--relative .mbr-navbar__section {
-  background-image: url(../images/bgr_wood.jpg) !important;
+  background-image: url(../images/bgr-full_.jpg) !important;
+  border-top: ridge 5px;
+  border-bottom: ridge 5px;
 }
 @media (max-width: 991px) {
   .mbr-navbar--auto-collapse .mbr-navbar__container {
