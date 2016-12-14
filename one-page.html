@@ -3,6 +3,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="./one-page_files/style.css">
     <link rel="stylesheet" href="./one-page_files/style(1).css">
@@ -24,23 +29,47 @@
 </head>
 
 <body>
-<section
+
+<div class="w3-top" style="z-index: 1000;">
+    <ul class="w3-navbar w3-card-2" id="myNavbar">
+        <li>
+            <a href="#home" class="w3-wide">ОФИС "Медицинский массаж"</a>
+        </li>
+        <!-- Right-sided navbar links -->
+        <li class="w3-right w3-hide-small">
+            <a href="#about">ABOUT</a>
+            <a href="#"><i class="fa fa-usd"></i> ПРАЙС</a>
+            <a href="#actions"><i class="fa fa-thumbs-o-up"></i> АКЦИИ</a>
+            <a href="#contacts"><i class="fa fa-envelope"></i> КОНТАКТЫ</a>
+        </li>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <li>
+            <a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<nav class="w3-sidenav w3-card-2 w3-animate-right w3-hide-medium w3-hide-large" id="mySidenav">
+    <a class="w3-border-bottom" href="#about" onclick="w3_close()">УСЛУГИ</a>
+    <a class="w3-border-bottom" href="#" onclick="w3_close()">ПРАЙС</a>
+    <a class="w3-border-bottom" href="#actions" onclick="w3_close()">АКЦИИ</a>
+    <a class="w3-border-bottom" href="#contacts" onclick="w3_close()">КОНТАКТЫ</a>
+</nav>
+<!--section
         class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse"
         id="menu-74">
     <div class="mbr-navbar__section mbr-section">
-        <div class="mbr-section__container container" style="width: 90%;">
+        <div class="mbr-section__container container" style="width: 70%;">
             <div class="mbr-navbar__container">
                 <div class="mbr-navbar__column mbr-navbar__column--xl mbr-navbar__brand">
                     <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
-                        <span class="mbr-brand__logo"><a href="https://mmassage.ru"><img
-                                class="mbr-navbar__brand-img mbr-brand__img"
-                                src="./images/м.jpg" alt=""></a></span>
-                        <span class="mbr-brand__name"><a class="mbr-brand__name"
-                                                         href="https://mmassage.ru" style="color: #333333; font-size:
-                                                          2.4em; font-family: 'Trebuchet MS', 'Lucida Grande', Tahoma,
-                                                           sans-serif;">ОФИС
-                            "Медицинский
-                            массаж"</a></span>
+                        <span class="mbr-brand__logo">
+                            <a href="https://mmassage.ru">
+                                <img class="mbr-navbar__brand-img mbr-brand__img" src="./images/logo_.png" alt="">
+                            </a>
+                        </span>
                     </span>
                 </div>
                 <div class="mbr-navbar__hamburger mbr-hamburger mbr-added">
@@ -49,18 +78,25 @@
                     </span>
                 </div>
                 <div class="mbr-navbar__column mbr-navbar__menu">
-                    <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                    <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline">
                         <div class="mbr-navbar__column">
-                            <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
+                            <ul class="mbr-navbar__items mbr-navbar__items mbr-buttons mbr-buttons--freeze mbr-buttons--center btn-decorator mbr-buttons--active">
                                 <!--li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
-                                                                href="#">ИНФО</a></li-->
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
-                                                                href="#">ПРАЙС</a>
+                                                                href="#">ИНФО</a></li->
+                                <li class="mbr-navbar__item">
+                                    <a class="mbr-buttons__link btn" href="#">
+                                        ПРАЙС
+                                    </a>
                                 </li>
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
-                                                                href="#">АКЦИИ</a></li>
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
-                                                                href="#contacts">КОНТАКТЫ</a>
+                                <li class="mbr-navbar__item">
+                                    <a class="mbr-buttons__link btn" href="#">
+                                        АКЦИИ
+                                    </a>
+                                </li>
+                                <li class="mbr-navbar__item">
+                                    <a class="mbr-buttons__link btn" href="#contacts">
+                                        КОНТАКТЫ
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -69,24 +105,26 @@
             </div>
         </div>
     </div>
-</section>
+</section-->
 
-<section
-        class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar"
+<!--section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height
+mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar"
         id="header1-73"
         style="background-image: none; position: relative; background-attachment: scroll; background-size: auto;">
     <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; visibility: hidden; z-index: -100;">
-        <div style="background-repeat: no-repeat; background-image: url(images/place-inside.jpg); position: fixed; top: 0px;
-        left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; background-size: 100% auto; visibility: visible;">
+        <div style="background-repeat: repeat-y; background-image: url(images/place-inside_top.jpg); position: fixed;
+        top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; background-size: 100% auto; visibility: visible;">
         </div>
     </div>
     <div class="mbr-overlay"
-         style="opacity: 0.3; background-color: #f0ad4e;"></div>
-</section>
+         style="opacity: 0.0; background-color: #f0ad4e;"></div>
+</section-->
 
 <!-- слайдер -->
 <section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true"
-         data-interval="5000" id="slider2-78" style="background-image: url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;">
+         data-interval="5000" id="slider2-78"
+         style="background-image: url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;
+         margin-top: 52px;">
     <div class="mbr-overlay"
          style="opacity: 0.1; background-color: #ededed;"></div>
     <div class="mbr-section__container container article-slider mbr-section__container--isolated">
@@ -456,7 +494,7 @@ url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;">
 </section>
 
 <footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-91"
-        style="border-top: ridge 5px; border-bottom: ridge 5px;">
+        style="border-top: ridge 5px; border-bottom: ridge 5px; background-image: url(images/place-inside_bottom.jpg)">
 
     <div class="mbr-section__container container">
         <div class="mbr-footer mbr-footer--wysiwyg row">
@@ -466,6 +504,24 @@ url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;">
         </div>
     </div>
 </footer>
+
+<script>
+    // Toggle between showing and hiding the sidenav when clicking the menu icon
+    var mySidenav = document.getElementById("mySidenav");
+
+    function w3_open() {
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+        } else {
+            mySidenav.style.display = 'block';
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        mySidenav.style.display = "none";
+    }
+</script>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
