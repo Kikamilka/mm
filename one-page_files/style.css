@@ -1,6 +1,8 @@
 html, body {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+html.main-page, body.main-page {
   background-image: url(../images/place-inside_top.jpg);
   background-repeat: repeat-y;
 }
