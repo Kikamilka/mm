@@ -2157,4 +2157,13 @@ a.text-white {
     background: rgba(255,239,27,0.76);
     border-bottom: ridge 5px;
 }
+.table-bordered.orange>tbody>tr>td {
+    border: 1px solid #dc8e3e !important;
+}
+.table-bordered.green>tbody>tr>td {
+    border: 1px solid #61c261 !important;
+}
+.table-bordered.blue>tbody>tr>td {
+    border: 1px solid #508cd3 !important;
+}
 
