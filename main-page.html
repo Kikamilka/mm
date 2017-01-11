@@ -33,13 +33,13 @@
 <div class="w3-top" style="z-index: 1000;">
     <ul class="w3-navbar w3-card-2" id="myNavbar">
         <li>
-            <a href="#home" class="w3-wide">ОФИС "Медицинский массаж"</a>
+            <a href="./main-page.html" class="w3-wide">ОФИС "Медицинский массаж"</a>
         </li>
         <!-- Right-sided navbar links -->
         <li class="w3-right w3-hide-small">
-            <a href="#about">ABOUT</a>
+            <a href="#about">УСЛУГИ</a>
             <a href="./price.html"><i class="fa fa-usd"></i> ПРАЙС</a>
-            <a href="#actions"><i class="fa fa-thumbs-o-up"></i> АКЦИИ</a>
+            <a href="./actions.html"><i class="fa fa-thumbs-o-up"></i> АКЦИИ</a>
             <a href="#contacts"><i class="fa fa-envelope"></i> КОНТАКТЫ</a>
         </li>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -53,72 +53,10 @@
 
 <nav class="w3-sidenav w3-card-2 w3-animate-right w3-hide-medium w3-hide-large" id="mySidenav">
     <a class="w3-border-bottom" href="#about" onclick="w3_close()">УСЛУГИ</a>
-    <a class="w3-border-bottom" href="#" onclick="w3_close()">ПРАЙС</a>
-    <a class="w3-border-bottom" href="#actions" onclick="w3_close()">АКЦИИ</a>
+    <a class="w3-border-bottom" href="./price.html" onclick="w3_close()">ПРАЙС</a>
+    <a class="w3-border-bottom" href="./actions.html" onclick="w3_close()">АКЦИИ</a>
     <a class="w3-border-bottom" href="#contacts" onclick="w3_close()">КОНТАКТЫ</a>
 </nav>
-<!--section
-        class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse"
-        id="menu-74">
-    <div class="mbr-navbar__section mbr-section">
-        <div class="mbr-section__container container" style="width: 70%;">
-            <div class="mbr-navbar__container">
-                <div class="mbr-navbar__column mbr-navbar__column--xl mbr-navbar__brand">
-                    <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
-                        <span class="mbr-brand__logo">
-                            <a href="https://mmassage.ru">
-                                <img class="mbr-navbar__brand-img mbr-brand__img" src="./images/logo_.png" alt="">
-                            </a>
-                        </span>
-                    </span>
-                </div>
-                <div class="mbr-navbar__hamburger mbr-hamburger mbr-added">
-                    <span
-                            class="mbr-hamburger__line">
-                    </span>
-                </div>
-                <div class="mbr-navbar__column mbr-navbar__menu">
-                    <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline">
-                        <div class="mbr-navbar__column">
-                            <ul class="mbr-navbar__items mbr-navbar__items mbr-buttons mbr-buttons--freeze mbr-buttons--center btn-decorator mbr-buttons--active">
-                                <!--li class="mbr-navbar__item"><a class="mbr-buttons__link btn"
-                                                                href="#">ИНФО</a></li->
-                                <li class="mbr-navbar__item">
-                                    <a class="mbr-buttons__link btn" href="#">
-                                        ПРАЙС
-                                    </a>
-                                </li>
-                                <li class="mbr-navbar__item">
-                                    <a class="mbr-buttons__link btn" href="#">
-                                        АКЦИИ
-                                    </a>
-                                </li>
-                                <li class="mbr-navbar__item">
-                                    <a class="mbr-buttons__link btn" href="#contacts">
-                                        КОНТАКТЫ
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</section-->
-
-<!--section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height
-mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar"
-        id="header1-73"
-        style="background-image: none; position: relative; background-attachment: scroll; background-size: auto;">
-    <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; visibility: hidden; z-index: -100;">
-        <div style="background-repeat: repeat-y; background-image: url(images/place-inside_top.jpg); position: fixed;
-        top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transition: transform linear -1ms, -webkit-transform linear -1ms; background-size: 100% auto; visibility: visible;">
-        </div>
-    </div>
-    <div class="mbr-overlay"
-         style="opacity: 0.0; background-color: #f0ad4e;"></div>
-</section-->
 
 <!-- слайдер -->
 <section class="mbr-slider mbr-section carousel slide" data-ride="carousel" data-wrap="true"
@@ -127,8 +65,9 @@ mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar"
          margin-top: 52px;">
     <div class="mbr-overlay"
          style="opacity: 0.1; background-color: #ededed;"></div>
-    <div class="mbr-section__container container-fluid article-slider mbr-section__container--isolated">
-        <div class="col-md-12">
+    <div class="mbr-section__container container-fluid article-slider mbr-section__container--isolated" style="display: flex;
+    justify-content: center;">
+        <div class="col-md-9">
             <ol class="carousel-indicators">
                 <li data-target="#slider2-78" class="active" data-slide-to="0"></li>
                 <li data-target="#slider2-78" data-slide-to="1"></li>
@@ -174,6 +113,7 @@ mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar"
          style="background-color: rgb(239, 239, 239);">
     <!-- Gallery -->
     <div class=" mbr-gallery-layout-default">
+        <a name="about"></a>
         <div>
             <div class="row mbr-gallery-row no-gutter" style="position: relative; height: 336px;">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mbr-gallery-item"
@@ -200,7 +140,7 @@ mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar"
                        data-toggle="modal">
                         <img alt="" src="./images/face.jpg" style="background-color: #e5e5e5; opacity: 0.7;">
                         <span class="icon my-text">
-                            Эстетический массаж лица  </span>
+                            Восстановление после травм  </span>
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mbr-gallery-item"
@@ -395,7 +335,7 @@ url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;">
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="./images/romanova.jpg"></div>
+                    <div class="image"><img class="undefined" src="./images/avatarka-pustaya.jpg"></div>
                     <div class="caption">
                         <div>
                             <h3>Саломатова Серафима</h3>
@@ -425,7 +365,7 @@ url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;">
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="./images/romanova.jpg"></div>
+                    <div class="image"><img class="undefined" src="./images/avatarka-pustaya.jpg"></div>
                     <div class="caption">
                         <div>
                             <h3>Заева Зиля</h3>
@@ -462,7 +402,7 @@ url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;">
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="./images/romanova.jpg"></div>
+                    <div class="image"><img class="undefined" src="./images/avatarka-pustaya.jpg"></div>
                     <div class="caption">
                         <div>
                             <h3>Лаврова Антонина</h3>
@@ -491,6 +431,36 @@ url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;">
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <div class="image"><img class="undefined" src="./images/avatarka-pustaya.jpg"></div>
+                    <div class="caption">
+                        <div>
+                            <h3>Заева Камила</h3>
+                            <ul style="list-style-type: none">
+                                <li>
+                                    <span class="glyphicon glyphicon-triangle-right" style="margin-right: 5px;"></span>
+                                    <span style="font-weight: bold;">Должность:</span>
+                                    <ul>
+                                        <li>
+                                            Специалист эстетического и оздоровительного массажа
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="glyphicon glyphicon-triangle-right" style="margin-right: 5px;"></span>
+                                    <span style="font-weight: bold;">Образование:</span>
+                                    <ul>
+                                        <li>
+                                            Тверской медицинский колледж — медицинский массаж
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -500,6 +470,7 @@ url(images/Background-5.png); border-top: ridge 5px; border-bottom: ridge 5px;">
     <div class="mbr-overlay" style="opacity: 0.4; background-color: #ffffff;"></div>
     <div class="mbr-box__container mbr-section__container container" style="width: 90% !important;">
         <div class="row" style="text-align: center; font-family: 'Comic Sans MS', cursive, sans-serif;">
+            <!-- TODO добавить описание про технику - рефлекторно-сегментарный массаж... вместо чего-нибудь -->
             <div>
                 <div class="image">
                     <img class="undefined" src="./images/individ.jpg" style="border-radius: 100px; opacity: 0.75;">
